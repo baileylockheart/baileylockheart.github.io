@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>I'M BORED</title>
+    <title>Bailey / Jay ⋆˚🐾˖°</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -9,198 +9,192 @@
     <meta name="theme-color" content="#FFC0CB">
 
     <!--meta tags-->
-    <meta name="description" content="So, while we're here, what should we talk about?"/>
+    <meta name="description" content="This is my attempt at a decent-looking portfolio!"/>
     <meta property="og:site_name" content="Github"/>
-    <meta property="og:title" content="I'M BORED"/>
+    <meta property="og:title" content="Bailey / Jay ⋆˚🐾˖°"/>
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="So, while we're here, what should we talk about?"/>
-    <meta property="og:image" content="https://baileylockheart.github.io/images/imbored.png"/>
+    <meta property="og:description" content="This is my attempt at a decent-looking portfolio!"/>
+    <meta property="og:image" content="https://baileylockheart.github.io/images/portfolio.png"/>
     <meta property="og:image:height" content="800"/>
     <meta property="og:url" content="https://baileylockheart.github.io/"/>
 
     <!--and the bird app bc they just have to be special-->
-    <meta name="twitter:title" content="I'M BORED" />
-    <meta name="twitter:image" content="https://baileylockheart.github.io/images/imbored.png">
-    <meta name="twitter:description" content="So, while we're here, what should we talk about?">
+    <meta name="twitter:title" content="Bailey / Jay ⋆˚🐾˖°" />
+    <meta name="twitter:image" content="https://baileylockheart.github.io/images/portfolio.png">
+    <meta name="twitter:description" content="This is my attempt at a decent-looking portfolio!">
     <meta property="twitter:card" content="summary_large_image"/>
 
     <link rel="canonical" href="https://baileylockheart.github.io/"/>
-    <link rel="icon" href="https://emojiguide.com/wp-content/uploads/platform/apple/43897.png" type="image/x-icon"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <script>
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-brand') {
+                setTheme('theme-dracula');
+            } else {
+                setTheme('theme-brand');
+            }
+        }
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-brand') {
+                setTheme('theme-brand');
+            } else {
+                setTheme('theme-dracula');
+            }
+        })();
+    </script>
 </head>
 <body>
 <div id="container">
-    <h1 style="text-align:center">I'm bored rn 🥲</h1>
-    <p style="text-align:start">So, while we're here, what should we talk about?</p>
-    <p style="text-align:end">Music? Games? Maybe even coding?</p><br>
-    <p>Maybe I'll make a silly little web design portfolio 👀</p>
-    <p>Well, not a portfolio of course, more of a list! So, in that case, I guess I should bring up the things I've made so far!</p>
+    <h1>Bailey / Jay ⋆˚🐾˖°</h1>
+    <p class="small">baileylockheart · any/all</p>
+    <p>This is my attempt at a decent-looking portfolio! Or, a portfolio-adjacent website, at least. Similar to its previous iteration, it's more of a list of everything I've made in relation to websites. The year listed under each site refers to the year that it was first made, <b>not</b> when it was last updated!</p>
+    <table id="center">
+        <tr>
+          <th class="symbol">Symbol</th>
+          <th>Meaning</th>
+          <th>Translation</th>
+        </tr>
+        <tr class="item">
+          <td class="symbol">&#9734;</td>
+          <td>Extra proud of this one!</td>
+          <td>Please take a look!!</td>
+        </tr>
+        <tr class="item">
+            <td class="symbol">&#9825;</td>
+            <td>I love this one, flaws and all!</td>
+            <td>Please be nice if you look :')</td>
+        </tr>
+        <tr class="item">
+            <td class="symbol">&#9888;</td>
+            <td>Really in need of an update...</td>
+            <td>Proceed with caution!</td>
+        </tr>
+    </table>
+    <br>
+    <button id="switch" onclick="toggleTheme()">Theme Switcher</button>
     <hr>
-    <h2><a href="https://jaysplace.neocities.org" target="_blank">Jay's Place</a></h2>
-    <img src="/images/jaysplace.png">
-    <p style="text-align:start">First thing's first, and I mean that literally! The first website I ever made was Jay's Place! The whole site is in disguise as a younger version of one of my self-insert OC's, and honestly, it's pretty fun!</p>
-    <p style="text-align:start">I made other small sites with website builders before, but this was the first one I made by coding it! This site was sort of where I learned the basic parts of HTML and CSS, and getting to experiment with the shrines definitely helped me learn more about layouts.</p>
-    <p style="text-align:start">I recently did a pretty big overhaul to the layout, and I think it's probably one of my favorite sites that I've made!</p>
-    <hr>
-    <h2><a href="https://baileylockheart.neocities.org" target="_blank">Bailey Lockheart</a></h2>
-    <img src="/images/baileylockheart.png">
-    <p style="text-align:start">I really love this one! It's a website mainly intended to house links and promote my music, but I also learned a lot while making it!</p>
-    <p style="text-align:start">This site is what really kicked off my recent coding hyperfixation - getting to work on a personal website and make sure every element was in my control really inspired my inner control freak 😍😍</p>
-    <p style="text-align:start">Jokes aside, though, I initially made this website in Carrd and thought it looked cool. I decided to code something similar, and it came out so well that I decided to delete the Carrd entirely - this one's really where it's at.</p>
-    <hr>
-    <h2><a href="https://lockheartlove.netlify.app" target="_blank">Lockheart Love</a></h2>
-    <img src="/images/lockheartlove.png">
-    <p style="text-align:start">I know I probably should've put this one first if I wanted the most eyes on it, but IF YOU'RE GONNA LOOK AT ANY OF THESE, LOOK AT THIS ONE!!!!!!!!!!!</p>
-    <p style="text-align:start;">This one's my personal website, which is getting the most active updates and has arguably the most stuff to look at! I'm very happy with it so far, and I'm excited to make it even better as time goes on!</p>
-    <hr>
-    <h2><a href="https://maddsbuckleyfansite.meowandsparkle.party" target="_blank">Madds Buckley Fansite</a></h2>
-    <img src="/images/maddsbuckleyfansite.png">
-    <p style="text-align:start">I'm actually a bit worried about this one? I used her brand kit to make it look nice, and I intend to add photos and videos later, but apparently ALL of that could potentially be copyright infringement 🥲</p>
-    <p style="text-align:start"><a href="https://va.media.tumblr.com/tumblr_sa1zuoidCK1a4vsuh.mp4" target="_blank">I already know she's chill with me using her brand kit,</a> but I'm a little nervous about the photos and videos. Still, I really love this little project, and despite claiming it's for <i>other</i> fans, it's definitely for my own entertainment, too!</p>
-    <hr>
-    <h2><a href="https://puppypilled.netlify.app" target="_blank">Puppypilled</a></h2>
-    <img src="/images/puppypilled.png">
-    <p style="text-align:start">I don't know why, but recently I've been VERY into the general aesthetic idea of puppies/dogs/pawprints, and I'm on a website-making kick right now, so I figured combining the two would be a good idea!</p>
-    <p style="text-align:start;">It's a bit rough and still very much in-progress, but it sparks joy :D</p>
-    <hr>
-    <h2><a href="https://thevoid-lockheart.netlify.app" target="_blank">The Void</a></h2>
-    <img src="/images/thevoid.png">
-    <p style="text-align: start;">Definitely the fastest thing I've ever finished, no questions there! Its sole purpose is basically to house your complaints about life and then discard them. Sort of like a place to vent, but it's ACTUALLY completely empty and there's no possible way for anyone to see it, even me. Plus, once it's gone, it's gone - no way to get it back (as far as I know), and no one will ever see it.</p>
-    <p style="text-align: start;">This was sort of just a way for me to make a fun little tool, as well as to mess around with things like importing fonts and customizing text areas!</p>
-    <hr>
-    <h2><a href="https://skztagram.netlify.app" target="_blank">SKZtagram</a></h2>
-    <img src="/images/skztagram.png">
-    <p style="text-align: start;">As if one fanmade site wasn't enough 🥲 Anyway, this site is intended to look similar to Instagram DMs, so you can rant to a member of Stray Kids, get no response, and erase it all at your leisure. I made this because I can't DM any of them, while other people can, and I wanted a solution so that I could at least pretend to.</p>
-    <p style="text-align: start;">This is <i>very much</i> a WIP, but I think it's coming out pretty well so far! It's my first time really messing around with JavaScript and actually trying to comprehend what it's about, but it'll all make sense eventually. I hope.</p>
-    <hr>
-    <h2><a href="/webmastery.html" target="_blank">Webmastery Tools</a></h2>
-    <img src="/images/webmasterytools.png">
-    <p style="text-align: start;">This isn't even really a SEPERATE site so much as it is an addition to this one, but I made a little thing so I can make more websites a little more easily! Additionally, this is meant to be helpful, so anyone can use it if they want to!</p>
-    <p style="text-align: start;">This one's gonna probably get lots of updates as I get more things and as I improve at all this coding stuff in general, but we'll see how it goes!</p>
-    <hr>
-    <h2><a href="https://dont-click-this.itch.io/a-different-place" target="_blank">A Different Place</a></h2>
-    <img src="/images/adifferentplace.png">
-    <p style="text-align: start;">This one's a little interesting, since it's actually an itch.io EP! I initially just wanted a reason to play around with audio elements, but then I decided to upload it, since I love the platform and want to add to it, but I'm not a game dev.</p>
-    <p style="text-align: start;">There are tools available to make better-looking pages for your music, and I may or may not end up using them in the future, but this was a way for me to try out making my own!</p>
-    <hr>
-    <h2><a href="https://baileylockheart-carrd.netlify.app/" target="_blank">Carrd (Dupe)</a></h2>
-    <img src="/images/carrd-dupe.png">
-    <p style="text-align: start;">I said I used to have a carrd, right? Well, I did, and it was fun while I had it. I had it in my Threads bio, since I wanted to be like my moots and I thought it would be fun. HOWEVER. The element limit was infuriating. So, I took matters into my own hands, and made one, myself!</p>
-    <p style="text-align: start;">I actually asked my first question on Stack Overflow to get this how I wanted it, which made me nervous, but now it works just how I want it to!</p>
-    <hr>
-    <h2><a href="https://everyone.melonland.net/lockheartlove143" target="_blank">My Room</a></h2>
-    <img src="/images/myroom.png">
-    <p style="text-align: start;">I recently joined the melonland forum, which I'm really enjoying so far! One part of that was being given a "room", which is basically a small, publicly edit-able webpage to decorate as I'd like! I haven't done much with mine yet, but I am having fun with it, so I thought I'd share it here!</p>
-    <hr>
-    <h2><a href="index.html" target="_blank">AND OF COURSE, THIS SITE!!!</a></h2>
-    <img src="/images/imbored.png">
-    <p style="text-align:start">If you click the link, it'll just reopen this same page in a new tab! I made this site mostly out of boredom, and it is the simplest of simple. I'm literally sitting in the middle of a classroom as I type this. Honestly, I was really surprised at how well this came out, since I made it in a chromebook text editor instead of my usual VSCode. Yet, for its simplicity, it came out well! I have a problem, but I adore it.</p>
-    <h3>And those are all the things I've coded so far!</h3>
-    <p style="text-align:start">However, it's not all the websites I've made - not exactly. I have a few other things under my belt in terms of designing with web builders, as well! Maybe they're not as impressive, but I still think they're pretty cool!</p>
-    <hr>
-    <h2><a href="https://jay143.straw.page" target="_blank">Straw Page</a></h2>
+    <div class="entry">
+        <h2><a href="https://jaysplace.neocities.org" target="_blank">Jay's Place &rarr;</a></h2>
+        <p>My first ever website!</p>
+        <img src="/images/jaysplace.png">
+        <p>Not Being Updated · 2023 · <a href="https://github.com/baileylockheart/jaysplace" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+    <h2>&#9734; <a href="https://baileylockheart.neocities.org" target="_blank">Bailey Lockheart &rarr;</a></h2>
+        <p>My official music site!</p>
+        <img src="/images/baileylockheart.png">
+        <p>Occasionally Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2>&#9734; <a href="https://lockheartlove.netlify.app" target="_blank">Lockheart Love &rarr;</a></h2>
+        <p>My personal website!</p>
+        <img src="/images/lockheartlove.png">
+        <p>Frequently Updated · 2024 · <a href="https://github.com/baileylockheart/lockheartlove" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://maddsbuckleyfansite.meowandsparkle.party" target="_blank">Madds Buckley Fansite &rarr;</a></h2>
+        <p>Fan website about Madds Buckley!</p>
+        <img src="/images/maddsbuckleyfansite.png">
+        <p>Occasionally Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://puppypilled.netlify.app" target="_blank">Puppypilled &rarr;</a></h2>
+        <p>Silly website about puppies!</p>
+        <img src="/images/puppypilled.png">
+        <p>Frequently Updated · 2024 · <a href="https://github.com/baileylockheart/puppypilled" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://thevoid-lockheart.netlify.app" target="_blank">The Void &rarr;</a></h2>
+        <p>Small test site!</p>
+        <img src="/images/thevoid.png">
+        <p>Not Being Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://skztagram.netlify.app" target="_blank">SKZtagram &rarr;</a></h2>
+        <p>Fan website about Stray Kids and messy Instagram clone!</p>
+        <img src="/images/skztagram.png">
+        <p>Occasionally Updated · 2023 · <a href="https://github.com/baileylockheart/skztagram" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="/webmastery.html" target="_blank">Webmastery Tools &rarr;</a></h2>
+        <p>Small collection of things I use to make websites! (Part of this site)</p>
+        <img src="/images/webmasterytools.png">
+        <p>Occasionally Updated · 2023 · <a href="https://github.com/baileylockheart/baileylockheart.github.io" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://dont-click-this.itch.io/a-different-place" target="_blank">A Different Place &rarr;</a></h2>
+        <p>My first EP as an Itch.io "game"!</p>
+        <img src="/images/adifferentplace.png">
+        <p>Not Being Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://baileylockheart-carrd.netlify.app/" target="_blank">Carrd-Inspired Site &rarr;</a></h2>
+        <p>Handmade website, similar to a carrd!</p>
+        <img src="/images/carrd.png">
+        <p>Ocassionally Updated · 2023 · <a href="https://github.com/baileylockheart/baileylockheart-carrd" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://baileylockheart.tumblr.com/" target="_blank">Tumblr Blog &rarr;</a></h2>
+        <p>Tumblr theme I made!</p>
+        <img src="/images/tumblr.png">
+        <p>Ocassionally Updated · 2023 · <a href="https://github.com/baileylockheart/tumblr-theme" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://everyone.melonland.net/lockheartlove143" target="_blank">My Room &rarr;</a></h2>
+        <p>Community editable site, part of melonland forum!</p>
+        <img src="/images/myroom.png">
+        <p>Ocassionally Updated · 2024</p>
+    </div>
+    <div class="entry">
+        <h2><a href="index.html" target="_blank">Portfolio (This Site) &rarr;</a></h2>
+        <p>The site you're looking at right now!</p>
+        <img src="/images/portfolio.png">
+        <p>Ocassionally Updated · 2023 · <a href="https://github.com/baileylockheart/baileylockheart.github.io" target="_blank">Github Repo</a></p>
+    </div>
+    <hr><p>The following pages were made with site builders, or are based on the structures of other websites. These are things in which I used little to no HTML/CSS to make them, but I still designed them in some way shape or form, and wanted to include them here.</p><hr>
+    <div class="entry">
+    <h2>&#9734; <a href="https://jay143.straw.page" target="_blank">Straw Page &rarr;</a></h2>
+    <p>Strawpage themed around Akito Shinonome from Project Sekai!</p>
     <img src="/images/strawpage.png">
-    <p style="text-align:start">This is my strawpage, which I made when I joined Bluesky! I think it's pretty visually different compared to most of my stuff, but I like it for that!</p>
-    <p style="text-align:start">If you wanna send me anonymous messages or drawings, check this one out!</p>
+    <p>Occasionally Updated · 2024</p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://st0rmscribbles.carrd.co" target="_blank">st0rmscribbles Carrd &rarr;</a></h2>
+        <p>Carrd housing links to my art accounts!</p>
+        <img src="/images/st0rmscribbles.png">
+        <p>Ocassionally Updated · 2024</p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://sites.google.com/view/threadslorewiki" target="_blank">Threads Lore Wiki &rarr;</a></h2>
+        <p>Largely incomplete Wiki made for the "lore" of Kpop Threads!</p>
+        <img src="/images/threadslore.png">
+        <p>Not Being Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://sites.google.com/view/shifting-things" target="_blank">Shifting Things &rarr;</a></h2>
+        <p>Small website I made when I was into reality shifting!</p>
+        <img src="/images/shiftingthings.png">
+        <p>Not Being Updated · 2022</p>
+    </div>
     <hr>
-    <h2><a href="https://st0rmscribbles.carrd.co" target="_blank">st0rmscribbles Carrd</a></h2>
-    <img src="/images/st0rmscribbles.png">
-    <p style="text-align:start">This is a Carrd (not a dupe, an actual carrd) with all the stuff from my alt/art accounts! I keep them separate from my main stuff, but I don't particularly feel like it needs to be a secret, so here they are!</p>
-    <hr>
-    <h2><a href="https://sites.google.com/view/threadslorewiki" target="_blank">Threads Lore Wiki</a></h2>
-    <img src="/images/threadslore.png">
-    <p style="text-align:start">I made a "wiki" about the lore that was going on on K-pop threads! This wiki is LARGELY outdated, but it's fun to look back on. I still like to go back and add things every now and then!</p>
-    <hr>
-    <h2><a href="https://sites.google.com/view/shifting-things" target="_blank">Shifting Things</a></h2>
-    <img src="/images/shiftingthings.png">
-    <p style="text-align:start">That's right, I had an interest in reality shifing! To be fair, I'm an anime enjoyer, so are we really surprised? Anyway, I haven't updated this in a while, and I'm not as passionately interested in shifting anymore, but I still like the color, at least 😅</p>
-    <hr>
-    <h2><a href="https://baileylockheart.tumblr.com/" target="_blank">Tumblr Blog</a></h2>
-    <img src="/images/tumblr.png">
-    <p style="text-align:start">Am I too used to microblogging for my own good? Perhaps. HOWEVER. That has not stopped me from at least attempting to start a Tumblr blog - I'll figure out what I want to do there eventually, but for now, I just want to mess around with the custom themes!</p>
-    <p style="text-align:start">Playing around with Tumblr's variables was very interesting, and I ended up with a pretty nice theme, in my opinion!</p>
-    <hr>
-    <h2>OKAY, I'M ACTUALLY DONE THIS TIME 😭</h2>
-    <p style="text-align:start">I got very excited about this 🥲 Anyway, I'll probably keep adding to this as I do things, so we'll have to see how that goes! I'm knee-deep in a web dev hyperfixation, so this is what I do instead of school, I guess 😭</p>
-    <p style="text-align: left;">Also also! If you wanna link back to this weird little list, here's the way to do so ^-^</p>
-    <textarea>
-    <a href="https://baileylockheart.github.io/" target="_blank"><img src="https://baileylockheart.github.io/images/bored.png"/></a>
-    </textarea>
-    <img src="/images/bored.png" width="88" height="31" style="width:88px; border-radius: 5px;"/>
-    <p style="text-align:start">Aaanyway, I hope you liked this little look at my websites and pages! 💖</p>
+    <h2>End of List!</h2>
+    <p>I've been making and editing a lot of my websites recently, so I thought I'd give my "portfolio" a makeover as well! I feel like this looks a lot more polished than the previous version, which you can still find <a target="_blank" href="/archive.html">here</a> if you're interested in seeing it.</p>
+    <p>Also! If you'd like to link back to this list, here's the way to do so!</p>
+    <textarea><a href="https://baileylockheart.github.io/" target="_blank"><img src="https://baileylockheart.github.io/images/portfolio-btn.png"/></a></textarea>
+    <img src="/images/portfolio-btn.png" width="88" height="31" style="width:88px; border-radius: 5px; border: 2px solid var(--accent);"/>
+    <p style="text-align:start">I hope you liked this look at all my websites and pages! 💖</p>
     
     <hr>
     <footer>
-    <p>This site was created purely out of boredom and is not meant to be good 🥲</p>
+    <p></p>
     </footer>
 </div>
-    <style>
-        html{
-            height:100%;
-            width:100%;
-            font-size:19px;
-        }
-        body:before{
-            background-attachment: scroll;
-            content: '';
-            display: block;
-            position: fixed;
-            width:100vw;
-            height:100vh;
-            left:0;
-            top:0;
-            transform: scale(1);
-            z-index: -700;
-            background-color:pink;
-        }
-        body{
-            font-family:"Poppins",sans-serif; 
-            color:purple;
-            font-size:1rem;
-            line-height:normal;
-            font-family:"Istok Web",sans-serif;
-            font-weight:150;
-        }
-        #container{
-            max-width:65vw;
-            text-align:center;
-            margin-left:auto;
-            margin-right:auto
-        }
-        img{
-            border: 3px solid purple;
-            border-radius: 15px;
-            width:65vw;
 
-        }
-        footer{
-            padding:1.25rem;
-        }
-        hr{
-            background-color:purple;
-            border:none;
-            border-radius:5px;
-            height:0.25rem;
-        }
-        a{
-            color:inherit;
-            font-size:inherit;
-            text-decoration:underline;
-        }
-        a:hover{
-            color:darkblue;
-            transition: 0.6s ease;
-            -webkit-transition: 0.6s ease
-        }
-        textarea{
-            background-color: lavenderblush;
-            color: purple;
-            border: dashed 3px purple;
-            font-size:0.75rem;
-            padding:5px
-        }
-    </style>
 </body>
 </html>

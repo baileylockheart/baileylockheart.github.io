@@ -68,10 +68,13 @@ body, html {
 img{
     border-radius: 15px;
     width:100%;
-
+}
+img.button{
+    width: 88px;
+    height:31px;
 }
 footer{
-    padding:1.25rem;
+    padding:0rem 0rem 1.25rem;
 }
 hr{
     width: 100%;

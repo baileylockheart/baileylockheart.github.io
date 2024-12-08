@@ -13,7 +13,7 @@
     --accent:#ffb86c;
     --scroll:#f8f8f2;
     --btn:#21222c;
-    --font:"Mona Sans", sans-serif
+    --font:"Mona Sans", sans-serif;
 }
 .theme-brand{
     --darker:#fbc9ff;
@@ -22,12 +22,12 @@
     --accent:#935adb;
     --scroll:#f7ebf7;
     --btn:#f7ebf7;
-    --font:"Alegreya", sans-serif
+    --font:"Alegreya", sans-serif;
 }
 html{
     height:100%;
     width:100%;
-    font-size: 19px;
+    font-size: 18px;
 }
 body:before{
     background-attachment: scroll;
@@ -114,12 +114,10 @@ p, h2{
 }
 p.small{
     text-align: center;
-    font-weight: 300;
     margin-top: -1rem;
 }
 p.desc{
     text-align: start;
-    font-weight: 300;
     margin-top: -0.5rem;
 }
 a{

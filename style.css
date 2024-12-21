@@ -120,6 +120,9 @@ p.desc{
     text-align: start;
     margin-top: -0.5rem;
 }
+h2{
+    font-weight: 500;
+}
 a{
     color:inherit;
     font-size:inherit;

@@ -53,6 +53,10 @@ body, html {
     scrollbar-width: auto;
     scrollbar-color: var(--accent) var(--scroll);
 }
+::selection {
+    background: var(--accent);
+    color:var(--bg)
+  }
 #container{
     max-width:60%;
     text-align:center;
@@ -68,7 +72,7 @@ body, html {
     border:2px solid var(--accent);
     padding:0rem 1rem
 }
-img{
+.entry img{
     border-radius: 15px;
     width:100%;
 }

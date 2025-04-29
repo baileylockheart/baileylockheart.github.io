@@ -1,12 +1,8 @@
 @font-face {
     font-family: Mona Sans;
-    src: url(/fonts/Mona-Sans.ttf);
+    src: url("/fonts/Mona-Sans.ttf");
   }
-@font-face {
-    font-family: Alegreya;
-    src: url(/fonts/Alegreya-VariableFont_wght.ttf);
-  }
-.theme-dracula{
+:root{
     --darker:#282a36;
     --bg:#21222c;
     --text:#f8f8f2;
@@ -14,15 +10,6 @@
     --scroll:#f8f8f2;
     --btn:#21222c;
     --font:"Mona Sans", sans-serif;
-}
-.theme-brand{
-    --darker:#fbc9ff;
-    --bg:#f7ebf7;
-    --text:#47324a;
-    --accent:#935adb;
-    --scroll:#f7ebf7;
-    --btn:#f7ebf7;
-    --font:"Alegreya", sans-serif;
 }
 html{
     height:100%;
@@ -64,10 +51,10 @@ body, html {
     margin-right:auto
 }
 .entry{
-    width:100%;
+    width:calc(100% - 36px);
     background-color: var(--darker);
     color:var(--text);
-    margin: 5px -1rem 1rem;
+    margin: 5px auto 1rem;
     border-radius: 10px;
     border:2px solid var(--accent);
     padding:0rem 1rem
@@ -76,6 +63,19 @@ body, html {
     border-radius: 15px;
     width:100%;
 }
+#smol{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#smol .entry{
+    width: 43%;
+    margin: 5px;
+}
+#smol .entry img{
+    border-radius: 5px;
+    margin:15px auto;
+}
 img.button{
     width: 88px;
     height:31px;
@@ -83,33 +83,36 @@ img.button{
 footer{
     padding:0rem 0rem 1.25rem;
 }
+footer p{
+    text-align: center;
+}
 hr{
     width: 100%;
     background-color:var(--accent);
     border:none;
     border-radius:5px;
-    margin: 2rem 0rem;
-    height:0.25rem;
+    margin: 1rem 0rem;
+    height:0.15rem;
+}
+hr.light{
+    background-color:#ffb86c63;
+    height:0.1rem;
 }
 button {
     background-color: var(--accent);
     color:var(--btn);
     cursor: pointer;
     width: max-content;
-    font-size:1rem;
+    height:31px;
+    font-size:0.85rem;
     font-family:"Mona Sans",sans-serif;
+    font-weight:700;
     border:none;
     border-radius:5px;
-    font-size:0.85rem;
-    height:31px;
-    font-weight:700;
     margin: 0px;
     margin-bottom: 3px;
     text-align: center;
-    text-decoration: none;
-    display: inline-flex;
-    cursor: pointer;
-    display: table-cell;
+    text-decoration: none !important;
     vertical-align: middle;
 }
 /*text*/
@@ -124,7 +127,7 @@ p.desc{
     text-align: start;
     margin-top: -0.5rem;
 }
-h2{
+h2, #smol .entry h3{
     font-weight: 500;
 }
 a{
@@ -144,35 +147,28 @@ textarea{
     font-size:0.5rem;
     padding:5px
 }
-/*chart*/
-table, th, td {
-    text-align:start;
-    font-family: var(--font);
-    border: 1px solid var(--text);
-    padding:0.5rem;
-    border-collapse: collapse;
+/*tabs!?!?!?*/
+.tabcontent {
+    display: none;
+} 
+.tabcontent:target{
+    display:block
 }
-table{
-    margin-top: 15px;
-    width:95%;
-}
-.symbol{
-    text-align: center;
-}
-th{
-    background-color: var(--darker);
-}
-#center{
-    display:table;
-    margin-left:auto;
-    margin-right:auto;
+@supports selector(:not(:has(+ *))) {
+  body:not(body:has(.tabcontent:target)) .home {
+      display: block;
+    }
 }
 @media (max-width: 768px){
     html{
         font-size: 16px;
     }
     #container{
-        max-width: 75%;
+        max-width: 80%;
+    }
+    #smol .entry{
+        width:calc(100% - 36px);
+        margin: 5px -1rem;
     }
     img{
         border-radius: 5px;

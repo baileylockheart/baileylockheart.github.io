@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bailey / Jay ⋆˚🐾˖°</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#282a36">
+
+    <!--meta tags-->
+    <meta name="description" content="This is my attempt at a decent-looking portfolio!"/>
+    <meta property="og:site_name" content="Github"/>
+    <meta property="og:title" content="Bailey / Jay ⋆˚🐾˖°"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This is my attempt at a decent-looking portfolio!"/>
+    <meta property="og:image" content="https://baileylockheart.github.io/images/portfolio.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://baileylockheart.github.io/archive/v2"/>
+
+    <!--and the bird app bc they just have to be special-->
+    <meta name="twitter:title" content="Bailey / Jay ⋆˚🐾˖°" />
+    <meta name="twitter:image" content="https://baileylockheart.github.io/images/portfolio.png">
+    <meta name="twitter:description" content="This is my attempt at a decent-looking portfolio!">
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <link rel="canonical" href="https://baileylockheart.github.io/archive/v2"/>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/24341c8af5.js" crossorigin="anonymous"></script>
+
+    <script>
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-brand') {
+                setTheme('theme-dracula');
+            } else {
+                setTheme('theme-brand');
+            }
+        }
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-brand') {
+                setTheme('theme-brand');
+            } else {
+                setTheme('theme-dracula');
+            }
+        })();
+    </script>
+    <style>
+        @font-face {
+    font-family: Mona Sans;
+    src: url("/fonts/Mona-Sans.ttf");
+  }
+@font-face {
+    font-family: Alegreya;
+    src: url("/fonts/Alegreya-VariableFont_wght.ttf");
+  }
+.theme-dracula{
+    --darker:#282a36;
+    --bg:#21222c;
+    --text:#f8f8f2;
+    --accent:#ffb86c;
+    --scroll:#f8f8f2;
+    --btn:#21222c;
+    --font:"Mona Sans", sans-serif;
+}
+.theme-brand{
+    --darker:#fbc9ff;
+    --bg:#f7ebf7;
+    --text:#47324a;
+    --accent:#935adb;
+    --scroll:#f7ebf7;
+    --btn:#f7ebf7;
+    --font:"Alegreya", sans-serif;
+}
+html{
+    height:100%;
+    width:100%;
+    font-size: 18px;
+}
+body:before{
+    background-attachment: scroll;
+    content: '';
+    display: block;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    transform: scale(1);
+    z-index: -700;
+    background-color: var(--bg);
+}
+body{
+    color: var(--text);
+    font-size:1rem;
+    line-height:normal;
+    font-family:var(--font);
+    font-weight:400;
+}
+body, html {
+    scrollbar-width: auto;
+    scrollbar-color: var(--accent) var(--scroll);
+}
+::selection {
+    background: var(--accent);
+    color:var(--bg)
+  }
+#container{
+    max-width:60%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto
+}
+.entry{
+    width:100%;
+    background-color: var(--darker);
+    color:var(--text);
+    margin: 5px -1rem 1rem;
+    border-radius: 10px;
+    border:2px solid var(--accent);
+    padding:0rem 1rem
+}
+.entry img{
+    border-radius: 15px;
+    width:100%;
+}
+img.button{
+    width: 88px;
+    height:31px;
+}
+footer{
+    padding:0rem 0rem 1.25rem;
+}
+hr{
+    width: 100%;
+    background-color:var(--accent);
+    border:none;
+    border-radius:5px;
+    margin: 2rem 0rem;
+    height:0.25rem;
+}
+button {
+    background-color: var(--accent);
+    color:var(--btn);
+    cursor: pointer;
+    width: max-content;
+    font-size:1rem;
+    font-family:"Mona Sans",sans-serif;
+    border:none;
+    border-radius:5px;
+    font-size:0.85rem;
+    height:31px;
+    font-weight:700;
+    margin: 0px;
+    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*text*/
+p, h2{
+    text-align: start;
+}
+p.small{
+    text-align: center;
+    margin-top: -1rem;
+}
+p.desc{
+    text-align: start;
+    margin-top: -0.5rem;
+}
+h2{
+    font-weight: 500;
+}
+a{
+    color:inherit;
+    font-size:inherit;
+    text-decoration:underline;
+}
+a:hover{
+    color:var(--accent);
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease
+}
+textarea{
+    background-color: var(--darker);
+    color: var(--text);
+    border: dashed 3px var(--accent);
+    font-size:0.5rem;
+    padding:5px
+}
+/*chart*/
+table, th, td {
+    text-align:start;
+    font-family: var(--font);
+    border: 1px solid var(--text);
+    padding:0.5rem;
+    border-collapse: collapse;
+}
+table{
+    margin-top: 15px;
+    width:95%;
+}
+.symbol{
+    text-align: center;
+}
+th{
+    background-color: var(--darker);
+}
+#center{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+}
+@media (max-width: 768px){
+    html{
+        font-size: 16px;
+    }
+    #container{
+        max-width: 75%;
+    }
+    img{
+        border-radius: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>Bailey / Jay ⋆˚🐾˖°</h1>
+    <p class="small">baileylockheart · any/all</p>
+    <p>This is my attempt at a portfolio-adjacent website! Similar to its previous iteration, it's a list of everything notable I've made in relation to websites. The year listed under each site refers to the year that it was first made, <b>not</b> when it was last updated!</p>
+    <table id="center">
+        <tr>
+          <th class="symbol">Symbol</th>
+          <th>Meaning</th>
+          <th>Translation</th>
+        </tr>
+        <tr class="item">
+          <td class="symbol">&#9734;</td>
+          <td>Extra proud of this one!</td>
+          <td>Please take a look!!</td>
+        </tr>
+        <tr class="item">
+            <td class="symbol">&#9825;</td>
+            <td>I love this one, flaws and all!</td>
+            <td>Please be nice if you look :')</td>
+        </tr>
+        <tr class="item">
+            <td class="symbol">&#9888;</td>
+            <td>Really in need of an update...</td>
+            <td>Proceed with caution!</td>
+        </tr>
+    </table>
+    <br>
+    <button id="switch" onclick="toggleTheme()">Theme Switcher</button>
+    <hr>
+    <div class="entry">
+        <h2>&#9734; <a href="https://lockheart.love" target="_blank">Lockheart Love &rarr;</a></h2>
+        <p>My personal website!</p>
+        <img src="/images/lockheartlove.png">
+        <p>Frequently Updated · 2024 · <a href="https://github.com/baileylockheart/lockheartlove" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9734; <a href="https://pastelprince.lockheart.love/" target="_blank">Pastel Prince Listings &rarr;</a></h2>
+        <p>My fanlisting collective!</p>
+        <img src="/images/pastelprince.png">
+        <p>Updated as Needed · 2025 · <a href="https://github.com/baileylockheart/lockheartlove" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://altar.lockheart.love/" target="_blank">ALTAR &rarr;</a></h2>
+        <p>For my spirituality-adjacent stuff!</p>
+        <img src="/images/altar.png">
+        <p>Occasionally Updated · 2025 · <a href="https://github.com/baileylockheart/lockheartlove" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+    <h2>&#9734; <a href="https://bailey.lockheart.love" target="_blank">Bailey Lockheart &rarr;</a></h2>
+        <p>My music site!</p>
+        <img src="/images/baileylockheart.png">
+        <p>Updated as Needed · 2023 · <a href="https://github.com/baileylockheart/music-site" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; &#9888; <a href="https://maddsbuckleyfansite.meowandsparkle.party" target="_blank">Madds Buckley Fansite &rarr;</a></h2>
+        <p>Fan website about Madds Buckley!</p>
+        <img src="/images/maddsbuckleyfansite.png">
+        <p>Occasionally Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://puppypilled.netlify.app" target="_blank">Puppypilled &rarr;</a></h2>
+        <p>Silly website about puppies!</p>
+        <img src="/images/puppypilled.png">
+        <p>Ocassionally Updated · 2024 · <a href="https://github.com/baileylockheart/puppypilled" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://webmasterwebring.netlify.app" target="_blank">Webmaster Webring &rarr;</a></h2>
+        <p>A webring for all kinds of sites!</p>
+        <img src="/images/webring.png">
+        <p>Frequently Updated · 2024 · <a href="https://github.com/baileylockheart/webmasterwebring" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://st0rmscribbles.netlify.app" target="_blank">st0rmscribbles &rarr;</a></h2>
+        <p>Small site about my art and OCs!</p>
+        <img src="/images/st0rmscribbles.png">
+        <p>Ocassionally Updated · 2024 · <a href="https://github.com/baileylockheart/st0rmscribbles" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9734; <a href="https://carrd-icons.netlify.app" target="_blank">Carrd Icons &rarr;</a></h2>
+        <p>A way to use icons from Carrd in your website!</p>
+        <img src="/images/carrd-icons.png">
+        <p>Ocassionally Updated · 2024 · <a href="https://github.com/baileylockheart/carrd-icons" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://carrd.lockheart.love" target="_blank">Carrd-Inspired Site &rarr;</a></h2>
+        <p>Handmade website, similar to a carrd!</p>
+        <img src="/images/carrd.png">
+        <p>Ocassionally Updated · 2023 · <a href="https://github.com/baileylockheart/baileylockheart-carrd" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9825; <a href="https://lockheartlove.netlify.app/webmastery" target="_blank">Webmastery Tools &rarr;</a></h2>
+        <p>A collection of things I use to make websites!</p>
+        <img src="/images/webmasterytools.png">
+        <p>Occasionally Updated · 2023 · <a href="https://github.com/baileylockheart/lockheartlove" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://skztagram.netlify.app" target="_blank">SKZtagram &rarr;</a></h2>
+        <p>Fan website about Stray Kids and messy Instagram clone!</p>
+        <img src="/images/skztagram.png">
+        <p>Rarely Updated · 2023 · <a href="https://github.com/baileylockheart/skztagram" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://thevoid-lockheart.netlify.app" target="_blank">The Void &rarr;</a></h2>
+        <p>Small test site!</p>
+        <img src="/images/thevoid.png">
+        <p>Not Being Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2><a href="index.html" target="_blank">Portfolio (This Site) &rarr;</a></h2>
+        <p>The site you're looking at right now!</p>
+        <img src="/images/portfolio.png">
+        <p>Updated as Needed · 2023 · <a href="https://github.com/baileylockheart/baileylockheart.github.io" target="_blank">Github Repo</a></p>
+    </div>
+    <hr><p>The following pages were made with site builders, or are based on the structures of other websites. These are things in which I used little to no HTML/CSS to make them, but I still designed them in some way shape or form, and wanted to include them here.</p><hr>
+    <div class="entry">
+        <h2>&#9734; <a href="https://jay143.straw.page" target="_blank">Straw Page &rarr;</a></h2>
+        <p>Strawpage themed around Akito Shinonome from Project Sekai!</p>
+        <img src="/images/strawpage.png">
+        <p>Occasionally Updated · 2024</p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://baileylockheart.tumblr.com" target="_blank">Tumblr Blog &rarr;</a></h2>
+        <p>My current Tumblr blog!</p>
+        <img src="/images/mytumblr.png">
+        <p>Ocassionally Updated · 2024</p>
+    </div>
+    <div class="entry">
+        <h2><a href="https://baileylockheart-responsivenavbar.tumblr.com" target="_blank">Tumblr Theme &rarr;</a></h2>
+        <p>A Tumblr theme I made!</p>
+        <img src="/images/tumblr.png">
+        <p>Not Being Updated · 2023 · <a href="https://github.com/baileylockheart/tumblr-theme" target="_blank">Github Repo</a></p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://sites.google.com/view/threadslorewiki" target="_blank">Threads Lore Wiki &rarr;</a></h2>
+        <p>Largely incomplete Wiki made for the "lore" of Kpop Threads!</p>
+        <img src="/images/threadslore.png">
+        <p>Not Being Updated · 2023</p>
+    </div>
+    <div class="entry">
+        <h2>&#9888; <a href="https://sites.google.com/view/shifting-things" target="_blank">Shifting Things &rarr;</a></h2>
+        <p>Small website I made when I was into reality shifting!</p>
+        <img src="/images/shiftingthings.png">
+        <p>Not Being Updated · 2022</p>
+    </div>
+    <hr>
+    <h2 style="text-align: center;">End of List!</h2>
+    <p>I've been making and editing a lot of my websites recently, so I thought I'd give my "portfolio" a makeover as well! I feel like this looks a lot more polished than the previous version, which you can still find <a target="_blank" href="/archive/v1.html">here</a> if you're interested in seeing it. Thank you for taking a look!</p>
+    <p>Also! If you'd like to link back to this list, here's the way to do so!</p>
+    <textarea><a href="https://baileylockheart.github.io/archive/v2" target="_blank"><img src="https://baileylockheart.github.io/images/portfolio-btn.png"/></a></textarea>
+    <img src="/images/portfolio-btn.png" width="88" height="31" style="width:88px; border-radius: 5px; border: 2px solid var(--accent);"/>
+    <br><br>
+    <a href="https://baileylockheart.github.io/webring?portfolio-previous"><img src="https://baileylockheart.github.io/webring/images/lh-left.png"></a><a href="https://baileylockheart.github.io/webring"><img src="https://baileylockheart.github.io/webring/images/lh-home.png"></a><a href="https://baileylockheart.github.io/webring?portfolio-next"><img src="https://baileylockheart.github.io/webring/images/lh-right.png"></a>
+    <hr>
+    <footer>
+        <a href="https://open.spotify.com/artist/0gZWd2jEBp1DloD73xiL8L"><i class="fa-brands fa-spotify"></i></a>&nbsp;&nbsp;
+        <a href="https://www.youtube.com/@bailey_lockheart"><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;
+        <a href="https://baileylockheart.tumblr.com"><i class="fa-brands fa-tumblr"></i></a>&nbsp;&nbsp;
+        <a href="https://www.threads.net/@bailey_lockheart"><i class="fa-brands fa-threads"></i></a>&nbsp;&nbsp;
+        <a href="https://github.com/baileylockheart"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
+        <a href="https://codepen.io/lockheartlove143"><i class="fa-brands fa-codepen"></i></a>
+    </footer>
+</div>
+
+</body>
+</html>
